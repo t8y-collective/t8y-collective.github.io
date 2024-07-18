@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+
+This is an example file building the most basic window.
+
+Jack Guianane
+2018-07-31
+
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Example</title>
+
+        <!-- Required scripts and stylesheets -->
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="draggable.js" type="text/javascript"></script>
+
+        <!-- Load any additional scripts or stylesheets below -->
+        <style>
+            .window {
+                width: 400px;
+                height: 300px;
+                border: 1px solid #ccc;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                overflow: auto; /* Add scroll bar */
+                background-color: #fff;
+                padding: 10px;
+                font-family: 'VT323', monospace;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+
+            .window-header {
+                background-color: #f0f0f0;
+                padding: 8px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .window-header button {
+                float: right;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Main window -->
+        <div class="window" id="test">
+            <!-- Header bar (must have the same ID as parent, plus 'header') -->
+            <div class="window-header" id="testheader">
+                <!-- Title of window -->
+                Title
+                <!-- Window control buttons -->
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">X</button>
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">_</button>
+            </div>
+            <!-- Place all of the windows content here -->
+            <p>Text</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget urna vel odio tincidunt commodo. Fusce sit amet lorem justo. Donec sagittis fringilla est, at consequat eros tincidunt vel. Integer rutrum odio et augue volutpat, nec placerat sapien tincidunt. Proin vel tristique lectus, in ultrices metus. Nam elementum dapibus velit, non efficitur metus bibendum sit amet. Quisque tempor id odio in fringilla. Nam ultrices ex eget sollicitudin euismod.</p>
+            <p>Nullam eleifend odio id enim tristique, at rutrum odio euismod. Vestibulum nec velit auctor, tincidunt purus vitae, consequat urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ultrices consequat ex, id fringilla lorem pulvinar vel. Cras tincidunt efficitur est. Donec auctor, sem in malesuada tempus, nunc ligula ullamcorper odio, a faucibus dolor leo vitae ligula. Suspendisse potenti.</p>
+        </div>
+        <!-- Makes the window draggable -->
+        <script>dragElement(document.getElementById("test"));</script>
+
+    </body>
+</html>

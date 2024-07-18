@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+
+This is an example website, using the Web-Based-Windows stylesheets and scripts.
+
+Jack Guianane
+2018-07-31
+
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>t8y</title>
+
+        <!-- Required scripts and stylesheets -->
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="draggable.js" type="text/javascript"></script>
+
+        <!-- Additional stylesheets below, for custom window styling -->
+        <link href="example-style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <div class="window" id="about" style="width:390px;">
+            <div class="window-header" id="aboutheader">
+                About.txt
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">X</button>
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">_</button>
+            </div>
+            
+            <p>t8y is an art collective developing new models of reflection, empowerment and participation to challenge the conception of technologies. They aim to co-create alternative dynamics and visions to the present day tech-driven transformation. Founded in 2024 by Nikki Böhler and Céline Nauer. </p>
+            <p></p>
+            
+        </div>
+        <script>dragElement(document.getElementById("about"));</script>
+
+        <div class="window install-page" id="install" style="top: 300px;left:100px;">
+            <div class="window-header" id="installheader">
+                Neopalpa Donaldtrumpi
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">X</button>
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">_</button>
+            </div>
+            
+            <p>Take a photo of this insect and upload it with the caption "Neopalpa Donaldtrumpi." </p>
+            <p>Algorithms increasingly determine our lives, and control over them lies solely in the hands of Big Tech. </p>
+            
+            <p>We counter this apathy with an insect!  </p>
+            <p>Together, we give the Neopalpa Donaldtrumpi moth many new faces, creating a new data foundation.</p>
+            <p>In this way, we empower people to take back control of their fate, determined by AI systems.</p>
+            
+        </div>
+        <script>dragElement(document.getElementById("install"));</script>
+        
+        <div class="window baby-image" id="image" style="width:200px;height:400px;top:200px;left:800px;">
+            <div class="window-header" id="imageheader">
+                neopalpadonaldtrumpi.jpg
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">X</button>
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">_</button>
+            </div>
+        </div>
+        <script>dragElement(document.getElementById("image"));</script>
+        
+        <!--
+        <div class="window alert-page" id="alert" style="width:400px;left:900px;top:50px;">
+            <div class="window-header" id="alertheader">
+                Alert
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">X</button>
+                <button onclick="this.parentNode.parentNode.style.display = 'none';">_</button>
+            </div>
+            
+            <p>Windows encountered an error.</p>
+            <button class="classic-button" onclick="this.parentNode.style.display = 'none';">OK</button>
+            
+        </div>
+        <script>dragElement(document.getElementById
