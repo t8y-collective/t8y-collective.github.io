@@ -5,38 +5,43 @@
  *  2018-07-31
  */
 
-html
-{
-    background-color: cadetblue;
-}
-
-.install-page
-{
-    background-color: #000;
-    text-align: left;
-    overflow-y: scroll;
-}
-
-.install-page p
-{
-    font-size: 1rem;
-    color: limegreen;
-}
-
-.install-page a
-{
-    font-size: 1rem;
-    color: aqua;
-}
-
-.baby-image {
-    background-image: url(neopalpa.jpg); /* Linking to neopalpa.jpg in the same folder */
+ html
+ {
+     background-color: cadetblue;
+ }
+ 
+ .install-page
+ {
+     background-color: #000;
+     text-align: left;
+     overflow-y: scroll;
+ }
+ 
+ .install-page p
+ {
+     font-size: 1rem;
+     color: limegreen;
+ }
+ 
+ .install-page a
+ {
+     font-size: 1rem;
+     color: aqua;
+ }
+ 
+ .baby-image {
+     background-image: url(trumpi.jpg); /* Linking to neopalpa.jpg in the same folder */
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+ }
+ 
+ .trump-image {
+    background-image: url(handy.jpg); /* Linking to neopalpa.jpg in the same folder */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
-.alert-page
-{
-    background-color: #c0c0c0;
-    padding-bottom: 20px;
-}
+ .alert-page
+ {
+     background-color: #c0c0c0;
+     padding-bottom: 20px;
+ }

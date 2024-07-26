@@ -5,16 +5,14 @@
  *  2018-07-31
  */
 
-html
-{
+ html {
     overflow: hidden;
 }
 
-button
-{
+button {
     border-right: solid 2px #87888E;
     border-bottom: solid 2px #87888E;
-    box-shadow: 0px 0px 0px 2px rgba(0,0,0,1);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 1);
     background-color: #C1C7C8;
     cursor: pointer;
     float: right;
@@ -26,24 +24,22 @@ button
     height: 22px;
 }
 
-button:active
-{
+button:active {
     background-color: #87888E;
 }
 
-.window 
-{
+.window {
     position: absolute;
     z-index: 9;
     background-color: #fff;
     border: 3px solid #C1C7C8;
-    text-align: center;    
+    text-align: center;
     padding: 2px;
     resize: both;
     overflow: auto;
     font-family: 'VT323', monospace;
     font-size: 1.4rem;
-    box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,1), 0px 0px 0px 2px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 1), 0px 0px 0px 2px rgba(0, 0, 0, 1);
     border-bottom-color: #5f6064;
     border-right-color: #5f6064;
     min-width: 280px;
@@ -51,8 +47,7 @@ button:active
     overflow-y: hidden;
 }
 
-.window-header
-{
+.window-header {
     position: sticky;
     text-align: center;
     cursor: move;
@@ -65,11 +60,8 @@ button:active
     user-select: none;
 }
 
-.classic-button
-{
-    box-shadow:
-        -1px -1px 0px 1px rgba(255,255,255,1),
-        0px 0px 0px 2px rgba(0,0,0,1);
+.classic-button {
+    box-shadow: -1px -1px 0px 1px rgba(255, 255, 255, 1), 0px 0px 0px 2px rgba(0, 0, 0, 1);
     background-color: #C0C0C0;
     float: none;
     font-size: 1.2rem;
@@ -77,26 +69,22 @@ button:active
     margin: 0;
     height: auto;
     font-weight: 100;
-    
     border-right: solid 2px #808080;
     border-bottom: solid 2px #808080;
     border-top: solid 2px #E0E0E0;
     border-left: solid 2px #E0E0E0;
 }
 
-.classic-button:active
-{
+.classic-button:active {
     border-bottom: solid 2px #C0C0C0;
     border-right: solid 2px #C0C0C0;
     border-left: solid 2px #000;
     border-top: solid 2px #000;
     background-color: #808080;
-    box-shadow:
-        -1px -1px 0px 1px #000,
-        0px 0px 0px 2px #000;
+    box-shadow: -1px -1px 0px 1px #000, 0px 0px 0px 2px #000;
 }
 
-.classic-button:focus
-{
+.classic-button:focus {
     outline: 0;
 }
+
